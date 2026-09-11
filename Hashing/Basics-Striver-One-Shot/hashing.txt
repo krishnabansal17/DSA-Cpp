@@ -1,0 +1,38 @@
+Hashing:
+    1. Prestoring & Fetching
+    2. Creates Hash/Frequency Array 
+
+For int value:
+    :Inside main()- max size array we can declare: arr[10^6]
+    :Globally- max size array we can declare: arr[10^7]
+
+For bool value:
+    :Inside main()- max size array we can declare: arr[10^7]
+    :Globally- max size array we can declare: arr[10^8]
+
+----------> If not followed, will through segmentation-fault <----------
+
+For char-hashing:
+    Make 26 size array & use ASCII value.
+    a: 97, z: 122, A:  & Z:
+    256 charecter exists. Make arr[256] for it.
+    Always use char-'a'
+
+In C++ STL comes in account- for range problem.
+    Use map<int, int>: key, value stored in it.
+    How to use - map[arr[i]]++;
+    Map stores all values in sorted order.
+    Storing/Fetching - O(logN) (Best/Avg/Worst all)
+
+Unordered Map:
+    Storing/Fetching: Avg/Best-Case TC- O(1) & Worst-Case TC - O(n).
+
+Internal Storing of data in Hashing:
+    1. Division Method: Uses chaining-method.
+    2. Folding Method
+    3. Mid Sq. Method
+
+Collision Method: Whatever has they are using internally, all the key values ends up at same hash-index.
+
+In map<> we can use any value as key (int, double, pair, etc), but in Unordered_map<> we cannot use pair<> as key.
+    Only int, double, char & string can be used.
