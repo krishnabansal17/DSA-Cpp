@@ -11,7 +11,7 @@ bool isFreqSame(int arr1[26], int arr2[26]) { //O(1)
     return true;
 }
 
-bool checkInclusion(string s1, string s2) {
+bool checkInclusion(string s1, string s2) { // TC: O(n1.n2), SC: O(1)
     int freq[26]={0}, n1=(int)s1.length(), n2=(int)s2.length();
     if(n1 > n2) return false;
 
